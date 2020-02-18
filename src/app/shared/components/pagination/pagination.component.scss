@@ -1,0 +1,16 @@
+.pagination {
+  position: absolute;
+  right: 100px;
+  bottom: -55px;
+  margin-bottom: 10px;
+
+  .active {
+    background-color: darkblue;
+    color: #fff;
+  }
+}
+.separator {
+  &:after{
+    content: '...';
+  }
+}
