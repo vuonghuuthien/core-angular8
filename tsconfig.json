@@ -24,7 +24,7 @@
       "@environment/*": ["environments/*"],
       "@shared/*": ["src/app/shared/*"],
       "@helpers/*": ["helpers/*"],
-      "@node/*": ["node_module/*"]
+      "@node/*": ["node_module/*"],
     }
   },
   "angularCompilerOptions": {
