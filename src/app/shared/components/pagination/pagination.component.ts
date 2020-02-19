@@ -5,7 +5,7 @@ declare var $: any;
 @Component({
     selector: 'app-pagination',
     templateUrl: './pagination.component.html',
-    styleUrls: ['./pagination.component.scss']
+    styleUrls: ['./pagination.component.css']
 })
 export class PaginationComponent implements OnInit {
     @Output('onPaginate') onPaginate: EventEmitter<number> = new EventEmitter();

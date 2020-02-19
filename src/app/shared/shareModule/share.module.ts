@@ -1,13 +1,14 @@
-import {ModuleWithProviders, NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {LoadingComponent} from '../_directives/loading/loading.component';
-import {AuthService} from '../_service/auth.service';
-import {ShareService} from './share.service';
-import {MaxlenghtImagePipe} from '@shared/_pipes/maxlenght-image.pipe';
-import {PaginationComponent} from '@shared/components/pagination/pagination.component';
-import {SafeHtmlPipe} from '@shared/_pipes/safeHtml.pipe';
+import { NgModule, ModuleWithProviders } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
-const PIPES = [MaxlenghtImagePipe, SafeHtmlPipe];
+import { ShareService } from './share.service';
+import { LoadingComponent } from '@shared/_directives/loading/loading.component';
+import { AuthService } from '@shared/_service/auth.service';
+import { MaxlengthImagePipe } from '@shared/_pipes/maxlength-image.pipe';
+import { PaginationComponent } from '@shared/components/pagination/pagination.component';
+import { SafeHtmlPipe } from '@shared/_pipes/safeHtml.pipe';
+
+const PIPES = [MaxlengthImagePipe, SafeHtmlPipe];
 const COMPONENTS = [PaginationComponent];
 
 @NgModule({
@@ -18,7 +19,6 @@ const COMPONENTS = [PaginationComponent];
         LoadingComponent,
         ...COMPONENTS,
         ...PIPES
-
     ],
     exports: [
         LoadingComponent,
@@ -29,11 +29,11 @@ const COMPONENTS = [PaginationComponent];
         AuthService,
     ]
 })
-export class ShareModule {
+export class ShareModule { 
     static forRoot(): ModuleWithProviders {
         return {
             ngModule: ShareModule,
             providers: [ShareService]
-        };
+        }
     }
 }

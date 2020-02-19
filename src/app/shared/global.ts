@@ -1,1 +1,2 @@
-export const BASE_URL = 'http://coloring-api.dev-altamedia.com';
+// link server 
+export const BASE_URL = '';
