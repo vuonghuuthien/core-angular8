@@ -1,0 +1,54 @@
+table {
+    border-bottom: 1px solid gainsboro;
+}
+ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+li {
+    display: inline;
+    padding: 0.275rem 0.75rem;
+}
+li a {
+    text-decoration: none;
+}
+.logo img {
+    height: 50px;
+    object-fit: cover;
+}
+.router-link {
+    color: rgba(0,0,0,.6);
+    font-weight: 600;
+}
+.router-link:hover {
+    color: rgba(0,0,0,.4);
+}
+.router-link.active {
+    color: var(--global-color-bright-point);
+}
+.sign-in {
+    color: white;
+    background-color: var(--global-color-bright-point);
+    border: 1px solid var(--global-color-bright-point);
+    white-space: nowrap;
+    padding: 0.275rem 0.75rem;
+    border-radius: 0.25rem;
+}
+.cart {
+    position: relative;
+}
+.cart img {
+    height: 25px;
+    object-fit: cover;
+}
+.number__cart {
+    position: absolute;
+    top: -6px;
+    left: 22px;
+    color: white;
+    background: #D94E3B;
+    border-radius: 0.5rem;
+    font-size: 0.6rem;
+    min-width: 0.9rem;
+    padding: 0 0.2rem;
+}

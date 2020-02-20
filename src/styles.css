@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Roboto';
+    src: url(assets/fonts/Roboto/Roboto-Thin.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(assets/fonts/Roboto/Roboto-Light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(assets/fonts/Roboto/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(assets/fonts/Roboto/Roboto-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(assets/fonts/Roboto/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(assets/fonts/Roboto/Roboto-Black.ttf);
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'Product Sans';
+    src: url(assets/fonts/Product_Sans/TTF/SVN-Product_Sans-Regular.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Product Sans', 'Roboto', Arial, Helvetica, sans-serif;
+}
+:root {
+    --global-color-bright-point: #D94E3B;
+}
