@@ -1,0 +1,35 @@
+.row {
+    width: 100%;
+    margin: 0;
+    border-top: 1px solid gainsboro;
+}
+.logo img {
+    height: 60px;
+    object-fit: cover;
+}
+.introduce, 
+.license {
+    margin-left: 1rem;
+}
+.title__contact_us {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #ddd;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+}
+.icon__contact_us i {
+    font-size: 3.5rem;
+    margin: 0 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.icon__contact_us i.fa-facebook-square {
+    color: #007bff;
+}
+.icon__contact_us i.fa-phone-square {
+    color: #28a745;
+}
+.icon__contact_us i.fa-envelope-square {
+    color: #D44638;
+}
