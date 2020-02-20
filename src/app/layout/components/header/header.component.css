@@ -36,6 +36,9 @@ li a {
 }
 .cart {
     position: relative;
+    padding: 0.35rem 0;
+    padding-left: 0.8rem;
+    /* border-left: 1px solid var(--global-color-bright-point); */
 }
 .cart img {
     height: 25px;
@@ -43,8 +46,8 @@ li a {
 }
 .number__cart {
     position: absolute;
-    top: -6px;
-    left: 22px;
+    top: -2px;
+    left: 2.2rem;
     color: white;
     background: #D94E3B;
     border-radius: 0.5rem;

@@ -1,0 +1,7 @@
+.wrap-content div {
+    height: 50vh;
+    width: calc(100% - 8rem);
+    margin: 20px 0;
+    margin-left: 4rem;
+    background: gainsboro;
+}
