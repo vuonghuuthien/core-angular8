@@ -1,11 +1,11 @@
 .wrap-content {
     background: #f9f9f9;
-    padding: 10px 0;
+    padding: 20px 0;
 }
-.wrap-content>div {
-    height: 58vh;
+.container-video {
+    position: relative;
     width: calc(100% - 9.5rem);
-    margin: 10px 0;
+    height: calc(100vh - 90px);
     margin-left: 4.75rem;
     background: #fff;
     border-radius: 0.25rem;
@@ -13,4 +13,10 @@
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.05);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.05);
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+video {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
 }

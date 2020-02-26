@@ -1,17 +1,23 @@
 <app-header></app-header>
 <div class="wrap-content">
-    <div>
-        <div class="col-sm-8">
-            <a href="#" class="logo">
-                <img src="/assets/images/logo.png" alt="">
-            </a>
-            <p class="introduce" 
-            style="margin-left: 5rem; font-size: 3rem; margin-top: -2rem; color: rgba(0,0,0,.6);">This is video introduce.</p>
-            <p  class="introduce"
-            style="margin-left: 5rem; margin-top: -0.5rem;">Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies.
-                Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex
-                mi ut sem.</p>
-        </div>
+    <div class="container-video">
+        <video controls crossorigin playsinline poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" id="player">
+            <!-- Video files -->
+            <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4" size="576">
+            <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" size="720">
+            <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4" size="1080">
+            <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1440p.mp4" type="video/mp4" size="1440">
+
+            <!-- Caption files -->
+            <track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
+                default>
+            <track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
+
+            <!-- Fallback for browsers that don't support the <video> element -->
+            <a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download>Download</a>
+        </video>
+        <p style="font-weight: bold; z-index: 1; position: absolute; top: 0; color: white; font-size: 10rem;
+            margin-left: 50px; width: 60%;">Aliquam porttitor vitae.</p>
     </div>
 </div>
 <app-footer></app-footer>
